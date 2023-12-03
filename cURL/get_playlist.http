@@ -3,28 +3,28 @@
 curl --request GET \
   --output classic_oldies_mix1.json \
   --url https://api.spotify.com/v1/playlists/23GrhDv3NZlyaqo2ayGXkm \
-  --header 'Authorization: Bearer BQBUFbWA1JKvfXMj_DqxcNVmkwdd6vrB-eb36yhI71T99mSpf1LD5cBX4nU-eAAEYgtuTR8KVgsIdL_WULkr0lhFcsIhFIGvvzcw0an8buVLeeHzxJ4'
+  --header 'Authorization: Bearer BQBaFghp3PWMwTadoTrmEFmBqkXs-dcTc59yj3R-HoMhYIVJMhZpLycqrov5LxTl6iZMW3ExXei5dcrY1cwUZb5CyMEzuW17Ullyb0QLBkLddabLeiY'
 
 # classic oldies 2
 curl --request GET \
   --output classic_oldies2.json \
   --url https://api.spotify.com/v1/playlists/37i9dQZF1DX56bqlsMxJYR \
-  --header 'Authorization: Bearer BQBUFbWA1JKvfXMj_DqxcNVmkwdd6vrB-eb36yhI71T99mSpf1LD5cBX4nU-eAAEYgtuTR8KVgsIdL_WULkr0lhFcsIhFIGvvzcw0an8buVLeeHzxJ4'
+  --header 'Authorization: Bearer BQBaFghp3PWMwTadoTrmEFmBqkXs-dcTc59yj3R-HoMhYIVJMhZpLycqrov5LxTl6iZMW3ExXei5dcrY1cwUZb5CyMEzuW17Ullyb0QLBkLddabLeiY'
 
 # 80s party
 curl --request GET \
   --output the80s_party.json \
   --url https://api.spotify.com/v1/playlists/37i9dQZF1DX6xnkAwJX7tn \
-  --header 'Authorization: Bearer BQD-87AkHUWQn3HX65jnYb7zSZ7ByKtyQqpw0LtGDp6Vc3DnMnhOKw4NleFh99Rusd8iuIuqaVt8-g52bB_abVpot_Ru05Km0hc1F6WldaWzGUc88vE'
+  --header 'Authorization: Bearer BQBaFghp3PWMwTadoTrmEFmBqkXs-dcTc59yj3R-HoMhYIVJMhZpLycqrov5LxTl6iZMW3ExXei5dcrY1cwUZb5CyMEzuW17Ullyb0QLBkLddabLeiY'
 
 # Best of 70s and 80s
 curl --request GET \
   --output best70s80s.json \
   --url https://api.spotify.com/v1/playlists/1nZpLA56VbyXsEG2VqRonU \
-  --header 'Authorization: Bearer BQD-87AkHUWQn3HX65jnYb7zSZ7ByKtyQqpw0LtGDp6Vc3DnMnhOKw4NleFh99Rusd8iuIuqaVt8-g52bB_abVpot_Ru05Km0hc1F6WldaWzGUc88vE'
+  --header 'Authorization: Bearer BQBaFghp3PWMwTadoTrmEFmBqkXs-dcTc59yj3R-HoMhYIVJMhZpLycqrov5LxTl6iZMW3ExXei5dcrY1cwUZb5CyMEzuW17Ullyb0QLBkLddabLeiY'
 
 # 90s hits
 curl --request GET \
   --output the90s_hits.json \
   --url https://api.spotify.com/v1/playlists/3C64V048fGyQfCjmu9TIGA \
-  --header 'Authorization: Bearer BQD-87AkHUWQn3HX65jnYb7zSZ7ByKtyQqpw0LtGDp6Vc3DnMnhOKw4NleFh99Rusd8iuIuqaVt8-g52bB_abVpot_Ru05Km0hc1F6WldaWzGUc88vE'
+  --header 'Authorization: Bearer BQBaFghp3PWMwTadoTrmEFmBqkXs-dcTc59yj3R-HoMhYIVJMhZpLycqrov5LxTl6iZMW3ExXei5dcrY1cwUZb5CyMEzuW17Ullyb0QLBkLddabLeiY'
