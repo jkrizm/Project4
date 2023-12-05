@@ -1,6 +1,0 @@
-{
-  "error" : {
-    "status" : 400,
-    "message" : "too many ids requested"
-  }
-}
