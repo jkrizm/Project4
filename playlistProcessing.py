@@ -11,7 +11,7 @@ for i in range(len(playlist_files)):
     for item in curr_data['tracks']['items']:
         song_dict = {}
         curr_track = item['track']
-        id_str += curr_track['id'] + ", "
+        id_str = curr_track['id'] + ","
         song_dict['id'] = curr_track['id']
         song_dict['song_name'] = curr_track['name']
         song_dict['artist'] = curr_track['artists'][0]['name']
@@ -22,6 +22,7 @@ for i in range(len(playlist_files)):
         else:
             song_dict['release_year'] = curr_track['album']['release_date']
         if j % 100 == 1 and j != 1:
+            print(j)
             full_str = full_str + "\n\nBATCH" + str((j-1)/100) + '\n'
         full_str = full_str + id_str
         playlist_data.append(song_dict)
