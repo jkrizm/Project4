@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="icon" type="image/png" href="static/images/icon.png" />
+  <title>Music through the decades</title>
+  <link rel="stylesheet" href="static/css/style.css">
+
+
+</head>
+
+
+<div class="navcontainer">
+  <ul>
+    <img src = "static/images/spotify.png">
+    <li><a href="/" class="home">Homepage</a></li>
+    <li><a href="decade" class="bydecade">By Decade</a></li>
+    <li><a href="feature" class="byfeature">By Musical Feature</a></li>
+   
+</div>
+
+
+<body>
+  <div id="page-container">
+<h1>Learn about the attributes</h1>
+<p>Select an attribute from the dropdown to learn more about it and adjust the slider to listen to different samples.</p>
+
+<div class="select-container">
+  <h3>Musical Attribute</h3>
+  <select title="attribute" class="form-select" id="selDataset" onchange="optionChanged(this.value)">
+
+  </select>
+</div>
+
+<div class = "plot-container"> 
+
+  <div class="slidecontainer">
+    <h2><span id="display_attribute"></span>: <span id="theval"></span></h2>
+      <input type="range" min="1" max="mymax" value="midpt" class="slider" id="theslide" onchange="getval(this.value)">
+  
+      
+      <button class = stopstart id="starter" onclick="startthemusic()">Start Song</button>
+      <button class = stopstart id="stopper" onclick="stopthemusic()">Stop Song</button>
+  </div>
+  <div class="slidecontainer">
+    <img id="albumcover" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Spotify_icon.svg/232px-Spotify_icon.svg.png" width="50%">
+    <h3><span id="songname"></span><span id="thesong"></span><br/>
+    <span id="artistname"></span><span id="theartist"></span></h3>
+  </div>
+</div>
+<h2>Definitions</h2>
+<p><span id="acousticness"><strong>Acousticness:</strong> A confidence measure from 0.0 to 1.0 of whether the track is acoustic. 1.0 represents high confidence the track is acoustic.</span></p>
+<p><span id="danceability"><strong>Danceability:</strong> Danceability describes how suitable a track is for dancing based on a combination of musical elements including tempo, rhythm stability, beat strength, and overall regularity. A value of 0.0 is least danceable and 1.0 is most danceable.</span></p>
+<p><span id="duration_ms"><strong>Duration (ms):</strong> The duration of the track in milliseconds.</p>
+<p><span id="energy"><strong>Energy:</strong> Energy is a measure from 0.0 to 1.0 and represents a perceptual measure of intensity and activity. Typically, energetic tracks feel fast, loud, and noisy. For example, death metal has high energy, while a Bach prelude scores low on the scale. Perceptual features contributing to this attribute include dynamic range, perceived loudness, timbre, onset rate, and general entropy.</span></p>
+<p><span id="instrumentalness"><strong>Instrumentalness:</strong> Predicts whether a track contains no vocals. "Ooh" and "aah" sounds are treated as instrumental in this context. Rap or spoken word tracks are clearly "vocal". The closer the instrumentalness value is to 1.0, the greater likelihood the track contains no vocal content. Values above 0.5 are intended to represent instrumental tracks, but confidence is higher as the value approaches 1.0.</span></p>
+<p><span id="key"><strong>Key:</strong> The key the track is in. Integers map to pitches using <a href = "https://en.wikipedia.org/wiki/Pitch_class" target="_blank">standard Pitch-Class notation</a>:  0 = C, 1 = C♯/D♭, 2 = D, 3 = D♯/E♭, 4 = E, 5 = F, 6= F♯/G♭, 7 = G, 8 = G♯/A♭, 9 = A, 10 = A♯/B♭, 11 = B. If no key was detected, the value is -1.</span></p>
+<p><span id="liveness"><strong>Liveness:</strong> Detects the presence of an audience in the recording. Higher liveness values represent an increased probability that the track was performed live. A value above 0.8 provides strong likelihood that the track is live.</span></p>
+<p><span id="loudness"><strong>Loudness:</strong> The overall loudness of a track in decibels (dB). Loudness values are averaged across the entire track and are useful for comparing relative loudness of tracks. Loudness is the quality of a sound that is the primary psychological correlate of physical strength (amplitude). Values typically range between -60 and 0 db.</span></p>
+<p><span id="mode"><strong>Mode:</strong> Mode indicates the modality (major or minor) of a track, the type of scale from which its melodic content is derived. Major is represented by 1 and minor is 0.</span></p>
+<p><span id="speechiness"><strong>Speechiness:</strong> Speechiness detects the presence of spoken words in a track. The more exclusively speech-like the recording (e.g. talk show, audio book, poetry), the closer to 1.0 the attribute value. Values above 0.66 describe tracks that are probably made entirely of spoken words. Values between 0.33 and 0.66 describe tracks that may contain both music and speech, either in sections or layered, including such cases as rap music. Values below 0.33 most likely represent music and other non-speech-like tracks.</span></p>
+<p><span id="tempo"><strong>Tempo:</strong> The overall estimated tempo of a track in beats per minute (BPM). In musical terminology, tempo is the speed or pace of a given piece and derives directly from the average beat duration.</span></p>
+<p><span id="time_signature"><strong>Time signature:</strong> An estimated time signature. The time signature (meter) is a notational convention to specify how many beats are in each bar (or measure). The time signature ranges from 3 to 7 indicating time signatures of "3/4", to "7/4".</span></p>
+<p><span id="valence"><strong>Valence:</strong> A measure from 0.0 to 1.0 describing the musical positiveness conveyed by a track. Tracks with high valence sound more positive (e.g. happy, cheerful, euphoric), while tracks with low valence sound more negative (e.g. sad, depressed, angry).</span></p>
+
+
+</div>
+<div class="clearfooter"></div>
+</div>
+</body>
+<div class = "footer"> 
+<p>Data and definitions obtained from <a href="https://developer.spotify.com/documentation/web-api" target="_blank">Spotify Web API</a>, October 2023.</p>
+</div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.4/howler.min.js"></script>
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  <script src="static/explore.js"></script>
+  
+
+
+</html>
