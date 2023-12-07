@@ -15,14 +15,16 @@ A homepage displaying a musical attribute dropdown, that when selected, populate
 The By Decade page displayed histograms for each attribute within a decade, selected from a dropdown.
 The By Musical Feature page displayed a line plot with error bars to see how the mean and variance of a given musical feature changes across the decades.
  
-Now for the final project, we wanted to:
-improve the code for the prior page to be more efficient
-build new pages for the website
-analyze the variability of attributes of songs classified as the same genre by spotify
-potentially to include comparing two genres to assess how the two genres are or are not correlated
-utilize machine learning to predict, based on a selected songs’ musical attributes, what categories the song would likely be listed in 
-for example, the genre it could be listed as, or the decade it was most likely released
-In order to accomplish this, we anticipate using:
+
+For the concluding phase of our project, our objectives are as follows:
+
+1. Enhance the efficiency of the existing code on the preceding page.
+2. Develop new pages to augment the overall functionality of the website.
+3. Conduct a comprehensive analysis of attribute variability among songs categorized under the same genre by Spotify.
+4. Consider undertaking a comparative analysis of two genres to evaluate their correlation or lack thereof.
+5. Employ machine learning techniques to predict, based on selected songs' musical attributes, potential categories such as genre or the decade of likely release.
+6. To fulfill these objectives, we plan to utilize advanced methodologies, including but not limited to:
+
 cURL API
 JS library howler
 HTML/CSS
