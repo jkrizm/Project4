@@ -1,0 +1,40 @@
+# source: https://www.sqlitetutorial.net/sqlite-import-csv/
+
+(base)  ~ % cd Project4
+(base)  % cd Database
+(base)  % sqlite3 SpotifyDB
+SQLite version 3.40.1 2022-12-28 14:03:47
+Enter ".help" for usage hints.
+sqlite> .mode csv
+sqlite> .import final.csv spotify_data
+sqlite> .schema spotify_data
+sqlite> CREATE TABLE new_spotify_data(index INT PRIMARY KEY,
+id TEXT, song_name TEXT, artist TEXT, pic_url TEXT,
+ preview_url TEXT, release_year INT, decade INT, danceability FLOAT,
+ energy FLOAT, key INT, loudness FLOAT, mode INT,
+ speechiness FLOAT, acousticness FLOAT, instrumentalness FLOAT, liveness FLOAT,
+ valence FLOAT, tempo FLOAT, type TEXT, uri TEXT,
+ track_href TEXT, analysis_url TEXT, duration_ms INT, time_signature INT);
+sqlite> INSERT INTO new_spotify_data SELECT * FROM spotify_data;
+sqlite> DROP TABLE spotify_data;
+sqlite> ALTER TABLE new_spotify_data RENAME TO spotify_data;
+
+sqlite> .import feature_definitions.csv feature_definitions
+
+sqlite> .import key.csv keys
+sqlite> CREATE TABLE new_keys(key INT PRIMARY KEY, key_text TEXT);
+sqlite> INSERT INTO new_keys SELECT * FROM keys;
+sqlite> DROP TABLE keys;
+sqlite> ALTER TABLE new_keys RENAME TO keys;
+
+sqlite> .import mode.csv modes
+sqlite> CREATE TABLE new_modes(mode INT PRIMARY KEY, mode_text TEXT);
+sqlite> INSERT INTO new_modes SELECT * FROM modes;
+sqlite> DROP TABLE modes;
+sqlite> ALTER TABLE new_modes RENAME TO modes;
+
+sqlite> .import time_signature.csv time_signatures
+sqlite> CREATE TABLE new_time_signatures(time_signature INT PRIMARY KEY, time_signature_text TEXT);
+sqlite> INSERT INTO new_time_signatures SELECT * FROM time_signatures;
+sqlite> DROP TABLE time_signatures;
+sqlite> ALTER TABLE new_time_signatures RENAME TO time_signatures;
