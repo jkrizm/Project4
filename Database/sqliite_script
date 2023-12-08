@@ -8,8 +8,7 @@ Enter ".help" for usage hints.
 sqlite> .mode csv
 sqlite> .import final.csv spotify_data
 sqlite> .schema spotify_data
-sqlite> CREATE TABLE new_spotify_data(index INT PRIMARY KEY,
-id TEXT, song_name TEXT, artist TEXT, pic_url TEXT,
+sqlite> CREATE TABLE new_spotify_data(id TEXT PRIMARY KEY, song_name TEXT, artist TEXT, pic_url TEXT,
  preview_url TEXT, release_year INT, decade INT, danceability FLOAT,
  energy FLOAT, key INT, loudness FLOAT, mode INT,
  speechiness FLOAT, acousticness FLOAT, instrumentalness FLOAT, liveness FLOAT,
@@ -20,6 +19,10 @@ sqlite> DROP TABLE spotify_data;
 sqlite> ALTER TABLE new_spotify_data RENAME TO spotify_data;
 
 sqlite> .import feature_definitions.csv feature_definitions
+sqlite> CREATE TABLE IF NOT EXISTS new_feature_definitions(feature TEXT PRIMARY KEY, stylized_name TEXT, definition TEXT);
+sqlite> INSERT INTO new_feature_definitions SELECT * FROM feature_definitions;
+sqlite> DROP TABLE feature_definitions;
+sqlite> ALTER TABLE new_feature_definitions RENAME TO feature_definitions;
 
 sqlite> .import key.csv keys
 sqlite> CREATE TABLE new_keys(key INT PRIMARY KEY, key_text TEXT);
