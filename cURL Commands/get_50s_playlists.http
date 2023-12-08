@@ -1,0 +1,51 @@
+
+
+curl --request GET ^
+  --output the50s_1.json ^
+  --url https://api.spotify.com/v1/playlists/37i9dQZF1EIdsD03EKoiN6 ^
+  --header "Authorization: Bearer BQCXpfRHcnBA0ziuvOhVokevR-sBtc36GGGj6HHhdQSVDSeW5QQ9rPcKOfVft0oAKwald6BxUJ-u1WWyphvz20ShMbnX_qjg6O6hVAfpMrwYimQg2Ls"
+
+
+curl --request GET ^
+  --output the50s_2.json ^
+  --url https://api.spotify.com/v1/playlists/6gfg0SNQ0ebRID2r0Tf19o ^
+  --header "Authorization: Bearer BQCXpfRHcnBA0ziuvOhVokevR-sBtc36GGGj6HHhdQSVDSeW5QQ9rPcKOfVft0oAKwald6BxUJ-u1WWyphvz20ShMbnX_qjg6O6hVAfpMrwYimQg2Ls"
+
+
+curl --request GET ^
+  --output the50s_3.json ^
+  --url https://api.spotify.com/v1/playlists/37i9dQZF1EIglBzuumdhaA ^
+  --header "Authorization: Bearer BQCXpfRHcnBA0ziuvOhVokevR-sBtc36GGGj6HHhdQSVDSeW5QQ9rPcKOfVft0oAKwald6BxUJ-u1WWyphvz20ShMbnX_qjg6O6hVAfpMrwYimQg2Ls"
+
+
+curl --request GET ^
+  --output the50s_4.json ^
+  --url https://api.spotify.com/v1/playlists/0oBuXI22S3zkG1ck6XELQu ^
+  --header "Authorization: Bearer BQCXpfRHcnBA0ziuvOhVokevR-sBtc36GGGj6HHhdQSVDSeW5QQ9rPcKOfVft0oAKwald6BxUJ-u1WWyphvz20ShMbnX_qjg6O6hVAfpMrwYimQg2Ls"
+
+
+curl --request GET ^
+  --output the50s_5.json ^
+  --url https://api.spotify.com/v1/playlists/37i9dQZF1DWWnpcjfCqaW0 ^
+  --header "Authorization: Bearer BQCXpfRHcnBA0ziuvOhVokevR-sBtc36GGGj6HHhdQSVDSeW5QQ9rPcKOfVft0oAKwald6BxUJ-u1WWyphvz20ShMbnX_qjg6O6hVAfpMrwYimQg2Ls"
+
+
+curl --request GET ^
+  --output the50s_6.json ^
+  --url https://api.spotify.com/v1/playlists/11BKK64Zg5dfb7Q0WhtJBk ^
+  --header "Authorization: Bearer BQCXpfRHcnBA0ziuvOhVokevR-sBtc36GGGj6HHhdQSVDSeW5QQ9rPcKOfVft0oAKwald6BxUJ-u1WWyphvz20ShMbnX_qjg6O6hVAfpMrwYimQg2Ls"
+
+curl --request GET ^
+  --output the50s_7.json ^
+  --url https://api.spotify.com/v1/playlists/4jyIPqsXWAQk8fQV0bX4lI ^
+  --header "Authorization: Bearer BQCXpfRHcnBA0ziuvOhVokevR-sBtc36GGGj6HHhdQSVDSeW5QQ9rPcKOfVft0oAKwald6BxUJ-u1WWyphvz20ShMbnX_qjg6O6hVAfpMrwYimQg2Ls"
+
+curl --request GET ^
+  --output the50s_8.json ^
+  --url https://api.spotify.com/v1/playlists/0iigxRZIf3lCG3NvvfMC3k ^
+  --header "Authorization: Bearer BQCXpfRHcnBA0ziuvOhVokevR-sBtc36GGGj6HHhdQSVDSeW5QQ9rPcKOfVft0oAKwald6BxUJ-u1WWyphvz20ShMbnX_qjg6O6hVAfpMrwYimQg2Ls"
+
+curl --request GET ^
+  --output the50s_9.json ^
+  --url https://api.spotify.com/v1/playlists/2NnCCw4xuDNZeX7LQpvi9v ^
+  --header "Authorization: Bearer BQCXpfRHcnBA0ziuvOhVokevR-sBtc36GGGj6HHhdQSVDSeW5QQ9rPcKOfVft0oAKwald6BxUJ-u1WWyphvz20ShMbnX_qjg6O6hVAfpMrwYimQg2Ls"
