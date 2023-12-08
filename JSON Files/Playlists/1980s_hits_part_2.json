@@ -1,0 +1,5 @@
+# 80s hits part 1
+curl --request GET\
+ --output the80s_hits_1.json \
+ --url https://api.spotify.com/v1/playlist/70N5mgNl3QBQB09zXoa72h \
+ --header 'Authorization: Bearer BQCXpfRHcnBA0ziuvOhVokevR-sBtc36GGGj6HHhdQSVDSeW5QQ9rPcKOfVft0oAKwald6BxUJ-u1WWyphvz20ShMbnX_qjg6O6hVAfpMrwYimQg2Ls'
