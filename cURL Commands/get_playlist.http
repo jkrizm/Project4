@@ -28,3 +28,85 @@ curl --request GET \
   --output the90s_hits.json \
   --url https://api.spotify.com/v1/playlists/3C64V048fGyQfCjmu9TIGA \
   --header 'Authorization: Bearer BQBaFghp3PWMwTadoTrmEFmBqkXs-dcTc59yj3R-HoMhYIVJMhZpLycqrov5LxTl6iZMW3ExXei5dcrY1cwUZb5CyMEzuW17Ullyb0QLBkLddabLeiY'
+
+# 1960s underground
+curl --request GET \
+  --output 1960s_underground.json \
+  --url https://api.spotify.com/v1/playlists/24ztyZoE6mpec8tIXRX0zn \
+  --header 'Authorization: Bearer BQCXpfRHcnBA0ziuvOhVokevR-sBtc36GGGj6HHhdQSVDSeW5QQ9rPcKOfVft0oAKwald6BxUJ-u1WWyphvz20ShMbnX_qjg6O6hVAfpMrwYimQg2Ls'
+
+# 1960s deep cuts
+curl --request GET \
+  --output 1960s_deep_cuts.json \
+  --url https://api.spotify.com/v1/playlists/4crRxPiAI9Mz0Xp1qlMPkC \
+  --header 'Authorization: Bearer BQCXpfRHcnBA0ziuvOhVokevR-sBtc36GGGj6HHhdQSVDSeW5QQ9rPcKOfVft0oAKwald6BxUJ-u1WWyphvz20ShMbnX_qjg6O6hVAfpMrwYimQg2Ls'
+
+# 70s hits
+curl --request GET \
+  --output the70s_hits_2.json \
+  --url https://api.spotify.com/v1/playlists/37i9dQZF1DWWiDhnQ2IIru \
+  --header 'Authorization: Bearer BQCXpfRHcnBA0ziuvOhVokevR-sBtc36GGGj6HHhdQSVDSeW5QQ9rPcKOfVft0oAKwald6BxUJ-u1WWyphvz20ShMbnX_qjg6O6hVAfpMrwYimQg2Ls'
+
+# 70s hits
+curl --request GET 
+  --output the70s_hits_3.json ^
+  --url https://api.spotify.com/v1/playlists/00KjsgI9t715OJFEUFziGJ ^
+  --header 'Authorization: Bearer BQCXpfRHcnBA0ziuvOhVokevR-sBtc36GGGj6HHhdQSVDSeW5QQ9rPcKOfVft0oAKwald6BxUJ-u1WWyphvz20ShMbnX_qjg6O6hVAfpMrwYimQg2Ls'
+
+  # 80s hits part 2
+curl --request GET\
+ --output the80s_hits_2.json \
+ --url https://api.spotify.com/v1/playlists/37i9dQZF1DXb57FjYWz00c \
+ --header 'Authorization: Bearer BQBukFpNa9PkXBk_wQRRuL1PrSz5-Cn3SXnpQfNWxSAxI4F90L7kHDtz3nBWLPq-jE5WIboXM-mk0Cb85lhnNBuOeR3GWUg-tFXCEHjhShK0kjOSjuU'
+
+ # 80s hits part 1
+curl --request GET\
+ --output the80s_hits_1.json \
+ --url https://api.spotify.com/v1/playlists/70N5mgNl3QBQB09zXoa72h \
+ --header 'Authorization: Bearer BQBukFpNa9PkXBk_wQRRuL1PrSz5-Cn3SXnpQfNWxSAxI4F90L7kHDtz3nBWLPq-jE5WIboXM-mk0Cb85lhnNBuOeR3GWUg-tFXCEHjhShK0kjOSjuU'
+
+curl --request GET ^
+  --output the00s_1.json ^
+  --url https://api.spotify.com/v1/playlists/37i9dQZF1DWVL8L5hAi6Qc ^
+  --header "Authorization: Bearer BQCXpfRHcnBA0ziuvOhVokevR-sBtc36GGGj6HHhdQSVDSeW5QQ9rPcKOfVft0oAKwald6BxUJ-u1WWyphvz20ShMbnX_qjg6O6hVAfpMrwYimQg2Ls"
+
+curl --request GET ^
+  --output the00s_2.json ^
+  --url https://api.spotify.com/v1/playlists/5bJpt3ljc9uSWiIV1pY6pz ^
+  --header "Authorization: Bearer BQCXpfRHcnBA0ziuvOhVokevR-sBtc36GGGj6HHhdQSVDSeW5QQ9rPcKOfVft0oAKwald6BxUJ-u1WWyphvz20ShMbnX_qjg6O6hVAfpMrwYimQg2Ls"
+
+curl --request GET ^
+  --output the00s_3.json ^
+  --url https://api.spotify.com/v1/playlists/0y6Bq4RldIeYeHzMSOPmtf ^
+  --header "Authorization: Bearer BQCXpfRHcnBA0ziuvOhVokevR-sBtc36GGGj6HHhdQSVDSeW5QQ9rPcKOfVft0oAKwald6BxUJ-u1WWyphvz20ShMbnX_qjg6O6hVAfpMrwYimQg2Ls"
+
+curl --request GET ^
+  --output the00s_4.json ^
+  --url https://api.spotify.com/v1/playlists/4eJt1mDmFWADM3T0zEUA48 ^
+  --header "Authorization: Bearer BQCXpfRHcnBA0ziuvOhVokevR-sBtc36GGGj6HHhdQSVDSeW5QQ9rPcKOfVft0oAKwald6BxUJ-u1WWyphvz20ShMbnX_qjg6O6hVAfpMrwYimQg2Ls"
+
+curl --request GET ^
+  --output the00s_5.json ^
+  --url https://api.spotify.com/v1/playlists/0yxJFChaPf458Sub9qW9P5 ^
+  --header "Authorization: Bearer BQCXpfRHcnBA0ziuvOhVokevR-sBtc36GGGj6HHhdQSVDSeW5QQ9rPcKOfVft0oAKwald6BxUJ-u1WWyphvz20ShMbnX_qjg6O6hVAfpMrwYimQg2Ls"
+
+curl --request GET ^
+  --output the00s_6.json ^
+  --url https://api.spotify.com/v1/playlists/1Ay29GfWbRACv5x0dve3HK ^
+  --header "Authorization: Bearer BQCXpfRHcnBA0ziuvOhVokevR-sBtc36GGGj6HHhdQSVDSeW5QQ9rPcKOfVft0oAKwald6BxUJ-u1WWyphvz20ShMbnX_qjg6O6hVAfpMrwYimQg2Ls"
+
+curl --request GET ^
+  --output the90s_1.json ^
+  --url https://api.spotify.com/v1/playlists/37i9dQZF1DXaLI8a395lse ^
+  --header "Authorization: Bearer BQCXpfRHcnBA0ziuvOhVokevR-sBtc36GGGj6HHhdQSVDSeW5QQ9rPcKOfVft0oAKwald6BxUJ-u1WWyphvz20ShMbnX_qjg6O6hVAfpMrwYimQg2Ls"
+
+curl --request GET ^
+  --output the90s_2.json ^
+  --url https://api.spotify.com/v1/playlists/7n9o9hO5buU4ngv6tpsaTC ^
+  --header "Authorization: Bearer BQCXpfRHcnBA0ziuvOhVokevR-sBtc36GGGj6HHhdQSVDSeW5QQ9rPcKOfVft0oAKwald6BxUJ-u1WWyphvz20ShMbnX_qjg6O6hVAfpMrwYimQg2Ls"
+
+curl --request GET ^
+  --output the90s_3.json ^
+  --url https://api.spotify.com/v1/playlists/37i9dQZF1DWVpjAJGB70vU ^
+  --header "Authorization: Bearer BQCXpfRHcnBA0ziuvOhVokevR-sBtc36GGGj6HHhdQSVDSeW5QQ9rPcKOfVft0oAKwald6BxUJ-u1WWyphvz20ShMbnX_qjg6O6hVAfpMrwYimQg2Ls"
+
