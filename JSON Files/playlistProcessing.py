@@ -22,6 +22,7 @@ for i in range(len(playlist_files)):
             song_dict['release_year']  = curr_track['album']['release_date'].split('-')[0]
         else:
             song_dict['release_year'] = curr_track['album']['release_date']
+        song_dict['decade'] = int(song_dict['release_year'])//10 * 10
         full_str = full_str + id_str
         playlist_data.append(song_dict)
     full_str += '\n'
