@@ -30,7 +30,7 @@ For Project 4, our goals were to:
 Our project drew from over 1800 songs in order to refine the model. This is an increase of 150% of the songs used in project 3.  
 
 # Summary
-In our study of 1810 songs from six different decades, we found some interesting connections between different aspects of the songs. Surprisingly, we noticed that there were 150% more songs than we initially thought when we started the project. However, making a successful model was tough because the songs varied a lot in style and genre. We also faced challenges with Spotify, as some songs were remastered and listed as newer than the original releases, making it tricky to manage the data. In the end, our research shows that predicting music trends is complex, thanks to the ever-changing nature of the music world.
+The findings from our project are summarized in our [project summary document] (https://docs.google.com/document/d/1HYaxgifmCOVyorIK1vQNqTZM2gYwFWc6c-cpdFQxJrY/edit?usp=sharing).
 
 
 
