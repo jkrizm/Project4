@@ -30,7 +30,7 @@ For Project 4, our goals were to:
 Our project drew from over 1800 songs in order to refine the model. This is an increase of 150% of the songs used in project 3.  
 
 # Summary
-The findings from our project are summarized in our [project summary document] (https://docs.google.com/document/d/1HYaxgifmCOVyorIK1vQNqTZM2gYwFWc6c-cpdFQxJrY/edit?usp=sharing).
+The findings from our project are summarized here: https://docs.google.com/document/d/1HYaxgifmCOVyorIK1vQNqTZM2gYwFWc6c-cpdFQxJrY/edit?usp=sharing
 
 
 
