@@ -20,9 +20,9 @@ For the concluding phase of our project, our objectives are as follows:
 
 1. Enhance the efficiency of the existing code on the preceding page.
 2. Develop new pages to augment the overall functionality of the website.
-3. Conduct a comprehensive analysis of attribute variability among songs categorized under the same genre by Spotify.
-4. Consider undertaking a comparative analysis of two genres to evaluate their correlation or lack thereof.
-5. Employ machine learning techniques to predict, based on selected songs' musical attributes, potential categories such as genre or the decade of likely release.
+3. Conduct a comprehensive analysis of attribute variability among songs released in the same year or decade by Spotify.
+4. Analyze if there is significant correlation between decade and song attributes.
+5. Employ machine learning techniques to predict, based on selected songs' musical attributes, potential categories such the decade of likely release.
 6. To fulfill these objectives, we plan to utilize advanced methodologies, including but not limited to:
 
 cURL API
@@ -33,5 +33,5 @@ Python Matplotlib
 JavaScript Plotly
 SQL Database or Google Cloud SQL
 Tableau
-Our project will draw from at least 500 songs in order to refine the model. 
+Our project drew from over 1000 songs in order to refine the model. 
 
